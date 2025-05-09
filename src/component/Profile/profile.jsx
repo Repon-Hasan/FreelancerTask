@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { vlalueContext } from '../../Layout/Homelayout'
+import { Helmet } from 'react-helmet-async';
 
 function profile() {
     const {user,updateUser,setUser}=useContext(vlalueContext);
@@ -23,6 +24,10 @@ function profile() {
    }
   return (
  <div>
+                 <Helmet>
+            <title>"Update profile page"</title>
+            <meta name="description" content={"View product details"} />
+          </Helmet>
        <h1 className='font-semibold md:text-5xl md:mt-8 md:mb-3 text-center'>Your Profile information</h1>
 <div className='grid md:grid-cols-2 grid-cols-1'>
 

@@ -3,6 +3,7 @@ import logo from "../../assets/logo.webp"
 import { Link, NavLink, useNavigate } from 'react-router'
 import { vlalueContext } from '../../Layout/Homelayout'
 import './Navbar.css'
+import { toast } from 'react-toastify'
 function Navbar() {
       
         const {a,signOutFromPage,user,loading  }=useContext(vlalueContext);
@@ -10,6 +11,7 @@ function Navbar() {
         const navigate = useNavigate()
         const handleLogout=()=>{
           signOutFromPage()
+          toast.success("SignOut successful");
         }
 
         if (loading) {

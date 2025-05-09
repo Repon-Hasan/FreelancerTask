@@ -1,6 +1,7 @@
 import React, { use, useContext, useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router'
 import { vlalueContext } from '../Layout/Homelayout';
+import { toast } from 'react-toastify';
 
 
 function Signup() {
@@ -16,17 +17,28 @@ function Signup() {
     const password=e.target.password.value;
     const name=e.target.name.value;
 	const url=e.target.photo.value;
-	const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
-    if (!passwordRegex.test(password)) {
-        alert("Password must be at least 6 characters long, and include at least one uppercase and one lowercase letter.");
-        return;
-    }
+if (password.length < 6) {
+  toast.warning("Password must be at least 6 characters long.");
+  return;
+}
+
+if (!/[a-z]/.test(password)) {
+  
+  toast.warning("Password must include at least one lowercase letter..");
+  return;
+}
+
+if (!/[A-Z]/.test(password)) {
+ toast.warning("Password must include at least one Uppercase letter..");
+  return;
+}
 
 	createUser(email,password);
 	updateUser({displayName:name,photoURL:url})
 	.then(() => {
 		setUser({...user,displayName:name,photoURL:url})
 		navigate("/")
+  toast.success("SignUp successful")
 		
 	  }).catch((error) => {
 		
@@ -85,7 +97,7 @@ function Signup() {
 				<input  type={showPassword ? "text" : "password"}  name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" fdprocessedid="60nyoc" />
 			</div>
 		</div>
-		<button   type="submit" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-600 dark:text-gray-50" fdprocessedid="5wpisv">Sign up</button>
+		<button  type="submit" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-600 dark:text-gray-50" fdprocessedid="5wpisv">Sign up</button>
 	</form>
 </div>
   )

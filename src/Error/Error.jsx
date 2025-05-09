@@ -14,7 +14,7 @@ function Error() {
         <p className='mt-2 text-center font-semibold'>Oop! The page you are looking for doesn't exist</p>
         <Link to='/'> <button className='ml-[45vw] mt-3 '><span className='text-white bg-green-600 px-auto py-1 px-1.5 rounded-xl'>Go Back Home</span></button> </Link>
     </div>
-    <p>I am error</p>
+    
     </div>
   )
 }
