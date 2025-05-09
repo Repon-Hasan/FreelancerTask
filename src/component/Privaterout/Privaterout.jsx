@@ -8,7 +8,7 @@ function Privaterout({children}) {
 
   const {pathname} =useLocation()
 
-  console.log(pathname)
+  //console.log(pathname)
   if(loading){
     return <div>loading.....</div>
   }

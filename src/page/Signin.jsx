@@ -13,7 +13,7 @@ function Signin() {
 	
 	const handleForgotPassword = () => {
 		
-		console.log("Navigating with email:", email);
+	
 		localStorage.setItem('resetEmail', email);
 		navigate('/forgetPassword');
 		//navigate('/forgetPassword', { state: { email } });
@@ -26,7 +26,7 @@ function Signin() {
 	    e.preventDefault();
 		const email=e.target.email.value;
 		const password=e.target.password.value;
-		console.log(email,password);
+		//console.log(email,password);
 	   handleLogin(email,password)
 	   navigate(From1)
 	

@@ -25,10 +25,10 @@ function Homelayout() {
   const signIngoogle=()=>{
     signInWithPopup(auth, provider)
   .then((result) => {
-     console.log(result)
+     //console.log(result)
   
   }).catch((error) => {
-    console.log(error)
+    //console.log(error)
   });
   }
 
@@ -38,21 +38,21 @@ function Homelayout() {
   
   .then((userCredential) => {
     const user = userCredential.user;
-    console.log("Login page",user)
+    
   })
   .catch((error) => {
     const errorMessage = error.message;
-    console.log(errorMessage)
+
   });
 
   }
 
   const signOutFromPage=()=>{signOut(auth).then(() => {
-    console.log("Signout successfully...")
+    //console.log("Signout successfully...")
    
  
   }).catch((error) => {
-    console.log(error)
+   // console.log(error)
   });
 };
 
@@ -68,7 +68,7 @@ const handlePassword=(email)=>{
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(errorMessage)
+    //console.log(errorMessage)
   });
 }
     const contextValue={
