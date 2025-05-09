@@ -17,12 +17,12 @@ function Signin() {
 	
 		localStorage.setItem('resetEmail', email);
 		navigate('/forgetPassword');
-		//navigate('/forgetPassword', { state: { email } });
+	
 	  };
     console.log("Location:", location)
 
 	const From1 = location.state?.from || "/";
-	//console.log(From1)
+	
 	const Login=(e)=>{
 	    e.preventDefault();
 		const email=e.target.email.value;
@@ -67,11 +67,11 @@ function Signin() {
 			</div>
 
 			<div className="space-y-2">
-				<div className="flex justify-between">
+				<div className="flex justify-between ">
 					<label htmlFor="password" className="text-sm">Password</label>
 					<Link onClick={handleForgotPassword}  className="text-xs hover:underline dark:text-gray-600">Forgot password?</Link>
 				</div>
-				<input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" fdprocessedid="jbfjsc" />
+				<input type="password " name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" fdprocessedid="jbfjsc" />
 			</div>
 		</div>
 		<button  type="submit" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-600 dark:text-gray-50" fdprocessedid="59kpzn">Sign in</button>

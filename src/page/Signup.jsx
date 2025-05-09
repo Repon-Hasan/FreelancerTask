@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 function Signup() {
 	const {createUser,signIngoogle,updateUser,setUser,user}=useContext(vlalueContext);
-	//https://assignment-9-3f65f.web.app/
+	
 	const navigate= useNavigate()
 	
 	const [showPassword, setShowPassword] = useState(false);
@@ -22,7 +22,7 @@ if (password.length < 6) {
   return;
 }
 
-if (!/[a-z]/.test(password)) {
+if ( !/[a-z]/.test(password)) {
   
   toast.warning("Password must include at least one lowercase letter..");
   return;
