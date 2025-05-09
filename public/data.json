@@ -1,0 +1,125 @@
+
+
+
+[
+  {
+    "id": 1,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-rvEHS8MPnZX8IqJZOCMVxGICucIvwvFQw&s",
+    "name": "Fresh Tomato Subscription",
+    "techCategory": "Organic Farming",
+    "price": 10.99,
+    "frequency": "Weekly",
+    "viewMore": "/services/tomato-subscription",
+    "description": "Enjoy farm-fresh organic tomatoes delivered weekly, bursting with natural flavor and nutrients."
+  },
+  {
+    "id": 2,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6X0ZO9JciQWJtOzAmK-TULmbOk1frsEJXiA&s",
+    "name": "Spinach Bundle",
+    "techCategory": "Hydroponics",
+    "price": 6.5,
+    "frequency": "Bi-Weekly",
+    "viewMore": "/services/spinach-bundle",
+    "description": "A crisp and clean bundle of hydroponically grown spinach, free from soil and pesticides."
+  },
+  {
+    "id": 3,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_41d7y2QdQIjEfTaiqwDiBtbfxvS30JAKlg&s",
+    "name": "Carrot Crate",
+    "techCategory": "Organic Farming",
+    "price": 9.0,
+    "frequency": "Monthly",
+    "viewMore": "/services/carrot-crate",
+    "description": "A crate of sweet and crunchy organic carrots, ideal for snacking or cooking."
+  },
+  {
+    "id": 4,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhjUz6Cj_eyMjDc0M8eRrmci8kJu_d7EhZQA&s",
+    "name": "Broccoli Heads",
+    "techCategory": "Sustainable Agriculture",
+    "price": 7.99,
+    "frequency": "Weekly",
+    "viewMore": "/services/broccoli-heads",
+    "description": "Nutrient-rich broccoli heads cultivated with sustainable practices for a greener future."
+  },
+  {
+    "id": 5,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU_31TgeNB7PKTs3ld9SDHzImneqnNL4TXQQ&s",
+    "name": "Cucumber Packs",
+    "techCategory": "Greenhouse Grown",
+    "price": 5.25,
+    "frequency": "Bi-Weekly",
+    "viewMore": "/services/cucumber-packs",
+    "description": "Cool, crisp cucumbers grown in controlled greenhouse environments for peak freshness."
+  },
+  {
+    "id": 6,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeoYkXWiz8MccGpicXWbVci3zs-LnBfu4kLA&s",
+    "name": "Bell Pepper Collection",
+    "techCategory": "Organic Farming",
+    "price": 12.0,
+    "frequency": "Monthly",
+    "viewMore": "/services/bell-pepper-collection",
+    "description": "A colorful mix of organic bell peppers, rich in vitamins and harvested chemical-free."
+  },
+  {
+    "id": 7,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR26mXbUwEzX3cxSCnL9SskXT17JIgwXU2xg&s",
+    "name": "Potato Sack",
+    "techCategory": "Traditional Farming",
+    "price": 8.75,
+    "frequency": "Weekly",
+    "viewMore": "/services/potato-sack",
+    "description": "A hearty sack of traditionally farmed potatoes—perfect for all your cooking needs."
+  },
+  {
+    "id": 8,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYmeJ8cPn9WcdcFbvptFXqNrGwxicUEmdahw&s",
+    "name": "Onion Packs",
+    "techCategory": "Soil-Based Farming",
+    "price": 6.0,
+    "frequency": "Bi-Weekly",
+    "viewMore": "/services/onion-packs",
+    "description": "Bold and flavorful onions grown in nutrient-rich soil, perfect for enhancing any dish."
+  },
+  {
+    "id": 9,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa3FSQ1CsyI7LZWBGxfs3w9WpsP0Gzw1PJpA&s",
+    "name": "Beetroot Delivery",
+    "techCategory": "Organic Farming",
+    "price": 7.25,
+    "frequency": "Monthly",
+    "viewMore": "/services/beetroot-delivery",
+    "description": "Deep red organic beets delivered fresh, great for juices, salads, and roasting."
+  },
+  {
+    "id": 10,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1m-wt8mGjMBaia-QUXsslbXtfhNqHBXYPMg&s",
+    "name": "Zucchini Box",
+    "techCategory": "Hydroponics",
+    "price": 8.5,
+    "frequency": "Weekly",
+    "viewMore": "/services/zucchini-box",
+    "description": "Fresh, tender hydroponic zucchinis delivered weekly for all your healthy recipes."
+  },
+  {
+    "id": 11,
+    "thumbnail": "https://cdn.britannica.com/27/78227-050-28A68F87/cauliflower-Head-colour-White-brown-cultivars.jpg",
+    "name": "Cauliflower Heads",
+    "techCategory": "Sustainable Agriculture",
+    "price": 9.75,
+    "frequency": "Bi-Weekly",
+    "viewMore": "/services/cauliflower-heads",
+    "description": "Large, nutrient-packed cauliflower heads grown using sustainable farming methods."
+  },
+  {
+    "id": 12,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN0THyPnUp_F-jrpOTH9qsaeuF9Rd-j5MZjA&s",
+    "name": "Lettuce Mix",
+    "techCategory": "Greenhouse Grown",
+    "price": 6.99,
+    "frequency": "Weekly",
+    "viewMore": "/services/lettuce-mix",
+    "description": "A fresh mix of lettuce varieties grown in greenhouses for a clean and crunchy salad base."
+  }
+]
