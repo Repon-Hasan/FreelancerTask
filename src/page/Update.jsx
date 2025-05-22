@@ -21,7 +21,7 @@ _id
                     const form= e.target;
             const formData= new FormData(form)
             const clientData= Object.fromEntries(formData.entries())
-            console.log(clientData);
+            //console.log(clientData);
             
       await fetch(`https://backend-nu-livid-37.vercel.app/update/${_id}`, {
         method: 'PUT',

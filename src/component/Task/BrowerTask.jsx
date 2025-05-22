@@ -12,7 +12,7 @@ function BrowerTask() {
     ReactTooltip.rebuild(); // ✅ Re-initialize tooltip after data loads
   }, [data]);
  
-  console.log(data)
+  //console.log(data)
   
 
   return (

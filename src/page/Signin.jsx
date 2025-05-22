@@ -26,7 +26,7 @@ const provider = new GoogleAuthProvider();
 	
 	  };
 	  
-    console.log("Location:", location)
+    //console.log("Location:", location)
 
 	const From1 = location.state?.from || "/";
 

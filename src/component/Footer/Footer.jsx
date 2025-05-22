@@ -3,7 +3,7 @@ import { NavLink } from 'react-router';
 
 function Footer({isDark}) {
   const mode=isDark
-  console.log("mode",mode)
+ // console.log("mode",mode)
   return (
     <div className ={`mt-6 rounded-t-xl shadow-inner ${mode ? 'bg-gray-900 text-white' : 'bg-gray-200 text-gray-900'}`}>
       <footer className="max-w-7xl mx-auto px-4 py-10">
