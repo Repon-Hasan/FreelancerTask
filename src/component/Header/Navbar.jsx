@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import logo from "../../assets/logo.webp"
+import logo from "../../assets/logo.png"
 import { Link, NavLink, useNavigate } from 'react-router'
 import { vlalueContext } from '../../Layout/Homelayout'
 import './Navbar.css'
@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     
-<div className="navbar bg-base-100 md:px-20 px-10">
+<div className="navbar bg-base-100 md:px-20 px-8 mt-0 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,11 +30,10 @@ function Navbar() {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-       <NavLink to="/">Home</NavLink>
-
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/profile">Profile</NavLink>
-
+          <NavLink to="/">Home</NavLink>
+      <NavLink to="/addTask">Add Task</NavLink>
+      <NavLink to="/browserTask">BrowserTask</NavLink>
+      <NavLink to="/postTask">PostTask</NavLink>
 
       </ul>
     </div>
@@ -47,9 +46,13 @@ function Navbar() {
     
 
       <NavLink to="/">Home</NavLink>
+      <NavLink to="/addTask">Add Task</NavLink>
+      <NavLink to="/browserTask">BrowserTask</NavLink>
+      <NavLink to="/postTask">PostTask</NavLink>
+      
 
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/profile">Profile</NavLink>
+
+    
 
 
     </ul>
@@ -67,8 +70,8 @@ function Navbar() {
   
 ) : (
   <> 
-   <Link to="/signup" className="btn bg-blue-600">Sign Up</Link>
-   <Link to="/signin" className="btn bg-blue-600">Sign in</Link>
+   <Link to="/signup" className="btn bg-blue-600">Register</Link>
+   <Link to="/signin" className="btn bg-blue-600">login in</Link>
    
   </>
   

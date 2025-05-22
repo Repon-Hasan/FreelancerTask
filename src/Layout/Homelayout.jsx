@@ -7,13 +7,16 @@ import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndP
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { Outlet, useNavigate } from 'react-router'
 import Footer from '../component/Footer/Footer';
+import { toast } from 'react-toastify';
 
 const provider = new GoogleAuthProvider();
+
 export const vlalueContext=createContext()
 const a=10
 
 
 function Homelayout() {
+  const navigate= useNavigate();
 
   const [user,setUser]=useState(null)
   const [loading, setLoading] = useState(true);
@@ -22,14 +25,14 @@ function Homelayout() {
     createUserWithEmailAndPassword(auth, email, password)
   }
 
-  const signIngoogle=()=>{
-    signInWithPopup(auth, provider)
-  .then((result) => {
-     //console.log(result)
-  
-  }).catch((error) => {
-    //console.log(error)
-  });
+  const signIngoogle= async()=>{
+    try {
+      const result = await signInWithPopup(auth, provider);
+      navigate('/');
+      toast.success('Google login successful')
+    } catch (error) {
+      console.error('Google Sign-In failed:', error);
+    }
   }
 
   const handleLogin=(email,password)=>{
@@ -110,7 +113,7 @@ useEffect(() => {
       
 <Navbar></Navbar>
         <Outlet></Outlet>
-        <Footer></Footer>
+    
 </vlalueContext.Provider>
     </div>
   )

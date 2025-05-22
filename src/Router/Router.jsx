@@ -9,12 +9,17 @@ import App from "../App";
 import Signin from "../page/Signin";
 import Home from "../component/Home/Home";
 import Hoamepage from "../page/Hoamepage";
-import Productdetails from "../component/services/Productdetails";
+
 import Privaterout from "../component/Privaterout/Privaterout";
-import About from "../component/About/About";
+
 import Error from "../Error/Error";
 import ForgetPassword from "../component/ForgetPassword/ForgetPassword";
-import Profile from "../component/Profile/profile"
+import Addtask from "../component/Task/Addtask";
+import BrowerTask from "../component/Task/BrowerTask";
+import PostTask from "../component/Task/PostTask";
+import TaskDetails from "../component/Task/TaskDetails";
+import Update from "../page/Update";
+
 export const router=createBrowserRouter([
   {
     path: "/",
@@ -22,16 +27,9 @@ export const router=createBrowserRouter([
     children:[
       { index: true, 
         element:<Hoamepage></Hoamepage>,
-        loader:()=>fetch('../data.json')
+        loader:()=>fetch('http://localhost:3000/task/home')
        },
-      { path:"details/:id",
-         element:
-
-         <Privaterout>
-             <Productdetails></Productdetails>
-         </Privaterout>,
-        loader:()=>fetch('../data.json')
-       },
+      
 
 {
   path:"/signup",
@@ -41,18 +39,47 @@ export const router=createBrowserRouter([
   path:"/signin",
   element:<Signin></Signin>
 },
+
 {
-  path:"/about",
+  path:"/addTask",
   element: <Privaterout>
-    <About></About>
+    <Addtask></Addtask>
   </Privaterout>
 },
 {
-  path:"/profile",
+  path:"/browserTask",
   element: <Privaterout>
-    <Profile></Profile>
+    <BrowerTask></BrowerTask>
+  </Privaterout>,
+   loader:()=>fetch('http://localhost:3000/task')
+},
+
+{
+  path:"/task/:id",
+  
+     loader:({params})=>fetch(`http://localhost:3000/task/${params.id}`),
+  element: <Privaterout>
+    <TaskDetails></TaskDetails>
+  </Privaterout>,
+
+},
+{
+  path:"/update/:id",
+     loader:({params})=>fetch(`http://localhost:3000/task/${params.id}`),
+  element: <Privaterout>
+    <Update></Update>
+  </Privaterout>,
+
+},
+
+{
+  path:"/postTask",
+    loader:()=>fetch('http://localhost:3000/task'),
+  element: <Privaterout>
+  <PostTask></PostTask>
   </Privaterout>
 },
+
  ]
 }, 
 { path: '/*', element: <Error></Error> },

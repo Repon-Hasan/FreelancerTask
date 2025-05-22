@@ -1,23 +1,25 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import { getAuth } from "firebase/auth";
+
 const firebaseConfig = {
-  apiKey:import.meta.env.VITE_apiKey, 
-  authDomai:import.meta.env.VITE_authDomain, 
-  projectId:import.meta.env.VITE_projectId, 
-  storageBucket:import.meta.env.VITE_storageBucket,
-  messagingSenderId:import.meta.env.VITE_messagingSenderId, 
-  appId:import.meta.env.VITE_appId, 
-  measurementId:import.meta.env.VITE_measurementId, 
+  //   apiKey: "AIzaSyAoMxfAQjCfPFvv66pvzpmWEgj74FzACo0",
+  // authDomain: "assignment-10-f3bf9.firebaseapp.com",
+  // projectId: "assignment-10-f3bf9",
+  // storageBucket: "assignment-10-f3bf9.firebasestorage.app",
+  // messagingSenderId: "574414215522",
+  // appId: "1:574414215522:web:a29390f5d86bfd8a0eb43b"
+
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
 export const auth = getAuth(app)
