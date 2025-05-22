@@ -20,7 +20,7 @@ email,
 userName
       } = Task
 const handleBidClick = () => {
-  fetch(`http://localhost:3000/tasks/${Task._id}/bid`, {
+  fetch(`https://backend-nu-livid-37.vercel.app/tasks/${Task._id}/bid`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'

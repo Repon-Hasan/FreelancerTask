@@ -22,7 +22,7 @@ const handleDelete=(_id)=>{
     console.log(result.isConfirmed)
   if (result.isConfirmed) {
     //start deleting the coffee
-    fetch(`http://localhost:3000/task/${_id}`,{
+    fetch(`https://backend-nu-livid-37.vercel.app/task/${_id}`,{
       method:'DELETE'
     })
     .then(res=>res.json())

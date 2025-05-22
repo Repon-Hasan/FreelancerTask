@@ -27,7 +27,7 @@ export const router=createBrowserRouter([
     children:[
       { index: true, 
         element:<Hoamepage></Hoamepage>,
-        loader:()=>fetch('http://localhost:3000/task/home')
+        loader:()=>fetch('https://backend-nu-livid-37.vercel.app/task/home')
        },
       
 
@@ -51,13 +51,13 @@ export const router=createBrowserRouter([
   element: <Privaterout>
     <BrowerTask></BrowerTask>
   </Privaterout>,
-   loader:()=>fetch('http://localhost:3000/task')
+   loader:()=>fetch('https://backend-nu-livid-37.vercel.app/task')
 },
 
 {
   path:"/task/:id",
   
-     loader:({params})=>fetch(`http://localhost:3000/task/${params.id}`),
+     loader:({params})=>fetch(`https://backend-nu-livid-37.vercel.app/task/${params.id}`),
   element: <Privaterout>
     <TaskDetails></TaskDetails>
   </Privaterout>,
@@ -65,7 +65,7 @@ export const router=createBrowserRouter([
 },
 {
   path:"/update/:id",
-     loader:({params})=>fetch(`http://localhost:3000/task/${params.id}`),
+     loader:({params})=>fetch(`https://backend-nu-livid-37.vercel.app/task/${params.id}`),
   element: <Privaterout>
     <Update></Update>
   </Privaterout>,
@@ -74,7 +74,7 @@ export const router=createBrowserRouter([
 
 {
   path:"/postTask",
-    loader:()=>fetch('http://localhost:3000/task'),
+    loader:()=>fetch('https://backend-nu-livid-37.vercel.app/task'),
   element: <Privaterout>
   <PostTask></PostTask>
   </Privaterout>

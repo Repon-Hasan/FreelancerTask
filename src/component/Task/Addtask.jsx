@@ -11,7 +11,7 @@ function Addtask() {
           const clientData= Object.fromEntries(formData.entries())
           console.log(clientData);
           
-    await fetch('http://localhost:3000/task', {
+    await fetch('https://backend-nu-livid-37.vercel.app/task', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(clientData),

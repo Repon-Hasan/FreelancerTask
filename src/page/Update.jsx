@@ -23,7 +23,7 @@ _id
             const clientData= Object.fromEntries(formData.entries())
             console.log(clientData);
             
-      await fetch(`http://localhost:3000/update/${_id}`, {
+      await fetch(`https://backend-nu-livid-37.vercel.app/update/${_id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(clientData),
