@@ -17,7 +17,7 @@ function Services({data}) {
   return (
     <div className='grid md:grid-cols-3 gap-6 md:px-24 md:my-4 px-4 md:mt-28'>
       {
-        display.map(item=> <Details item={item}></Details> )
+        Array.isArray(display) && display.map(item=> <Details item={item}></Details> )
       }
 
        

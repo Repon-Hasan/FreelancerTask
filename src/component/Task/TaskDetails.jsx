@@ -45,7 +45,7 @@ const handleBidClick = () => {
             
            <div className=''>
           
-            <div className="card bg-base-100 w-96 shadow-sm h-[400px] mx-auto md:mt-10">
+            <div className="card bg-base-100 w-96 shadow-sm h-[550px] mx-auto md:mt-10">
                 <h2 className='mx-auto my-3 text-xl font-semibold text-gray-400'>You bid for {bidsCount} opportunities.</h2>
         <figure>
           

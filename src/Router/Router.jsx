@@ -48,9 +48,9 @@ export const router=createBrowserRouter([
 },
 {
   path:"/browserTask",
-  element: <Privaterout>
-    <BrowerTask></BrowerTask>
-  </Privaterout>,
+  element: 
+    <BrowerTask></BrowerTask>,
+  
    loader:()=>fetch('https://backend-nu-livid-37.vercel.app/task')
 },
 

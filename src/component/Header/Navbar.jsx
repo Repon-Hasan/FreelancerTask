@@ -70,8 +70,8 @@ function Navbar() {
   
 ) : (
   <> 
-   <Link to="/signup" className="btn bg-blue-600">Register</Link>
-   <Link to="/signin" className="btn bg-blue-600">login in</Link>
+   <Link to="/signup" className="btn bg-blue-600">SignUp</Link>
+   <Link to="/signin" className="btn bg-blue-600">Login</Link>
    
   </>
   

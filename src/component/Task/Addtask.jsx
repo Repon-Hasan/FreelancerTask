@@ -1,9 +1,12 @@
 import React from 'react'
 import { toast } from 'react-toastify';
 import Footer from '../Footer/Footer';
+import { useContext } from 'react';
+import { vlalueContext } from '../../Layout/Homelayout';
 
 function Addtask() {
   const categories = ['Web Development', 'Design', 'Writing', 'Marketing'];
+   const {user  }=useContext(vlalueContext);
     const handleSubmit = async (e) => {
     e.preventDefault();
                   const form= e.target;
@@ -97,6 +100,8 @@ function Addtask() {
         <input
           type="email"
           name="email"
+          value={user.email}
+          readOnly
           className="w-full p-2 border rounded"
           required
         />
@@ -110,6 +115,8 @@ function Addtask() {
         <input
           type="text"
           name="userName"
+                 value={user.displayName}
+          readOnly
           className="w-full p-2 border rounded bg-gray-100"
         />
       </label>

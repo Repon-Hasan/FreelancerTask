@@ -22,6 +22,7 @@ const handleDelete=(_id)=>{
     console.log(result.isConfirmed)
   if (result.isConfirmed) {
     //start deleting the coffee
+    https://backend-nu-livid-37.vercel.app/task
     fetch(`https://backend-nu-livid-37.vercel.app/task/${_id}`,{
       method:'DELETE'
     })
